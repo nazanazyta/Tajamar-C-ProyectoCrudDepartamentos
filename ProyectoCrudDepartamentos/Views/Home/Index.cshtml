@@ -1,0 +1,28 @@
+﻿@model List<Departamento>
+<a asp-controller="Home" asp-action="Create" style="color: blue">Crear nuevo</a>
+<br />
+<table class="table table-bordered table-primary">
+    <thead>
+        <tr>
+            <th>Número</th>
+            <th>Nombre</th>
+            <th>Localidad</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Departamento dep in Model)
+        {
+            <tr>
+                <th>@dep.IdDepartamento</th>
+                <th>@dep.Nombre</th>
+                <th>@dep.Localidad</th>
+                <th>
+                    @Html.ActionLink("Editar", "Edit", "Home", new { iddept = dep.IdDepartamento }) |
+                    @Html.ActionLink("Detalles", "Details", "Home", new { iddept = dep.IdDepartamento }) |
+                    @Html.ActionLink("Borrar", "Delete", "Home", new { iddept = dep.IdDepartamento })
+                </th>
+            </tr>
+        }
+    </tbody>
+</table>
