@@ -460,11 +460,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nazaret\\source\\repos\\ProyectoCrudDepartamentos\\ProyectoCrudDepartamentos\\ProyectoCrudDepartamentos.csproj",
+      "projectUniqueName": "C:\\Users\\Nazaret\\Repos\\Tajamar-C-ProyectoCrudDepartamentos\\ProyectoCrudDepartamentos\\ProyectoCrudDepartamentos.csproj",
       "projectName": "ProyectoCrudDepartamentos",
-      "projectPath": "C:\\Users\\Nazaret\\source\\repos\\ProyectoCrudDepartamentos\\ProyectoCrudDepartamentos\\ProyectoCrudDepartamentos.csproj",
+      "projectPath": "C:\\Users\\Nazaret\\Repos\\Tajamar-C-ProyectoCrudDepartamentos\\ProyectoCrudDepartamentos\\ProyectoCrudDepartamentos.csproj",
       "packagesPath": "C:\\Users\\Nazaret\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nazaret\\source\\repos\\ProyectoCrudDepartamentos\\ProyectoCrudDepartamentos\\obj\\",
+      "outputPath": "C:\\Users\\Nazaret\\Repos\\Tajamar-C-ProyectoCrudDepartamentos\\ProyectoCrudDepartamentos\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
