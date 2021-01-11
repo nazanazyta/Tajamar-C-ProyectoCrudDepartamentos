@@ -24,6 +24,14 @@ namespace ProyectoCrudDepartamentos.Controllers
             return View(depar);
         }
 
+        [HttpPost]
+        public IActionResult Index(String nombre)
+        {
+            List<Departamento> departamentos = this.context.GetDepartamentoNombre(nombre);
+            ViewData["dept"] = departamentos;
+            return View();
+        }
+
         public IActionResult Create()
         {
             return View();

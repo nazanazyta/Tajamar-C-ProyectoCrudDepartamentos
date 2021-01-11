@@ -56,6 +56,24 @@ namespace ProyectoCrudDepartamentos.Data
             return dept;
         }
 
+        public List<Departamento> GetDepartamentoNombre(String nombre)
+        {
+            var consulta = from datos in this.tabla.AsEnumerable()
+                           //where datos.Field<String>("dnombre").ToLower() == nombre.ToLower()
+                           where datos.Field<String>("dnombre").ToLower().Contains(nombre.ToLower())
+                           select datos;
+            List<Departamento> departamentos = new List<Departamento>();
+            foreach (var row in consulta)
+            {
+                Departamento dep = new Departamento();
+                dep.IdDepartamento = row.Field<int>("dept_no");
+                dep.Nombre = row.Field<String>("dnombre");
+                dep.Localidad = row.Field<String>("loc");
+                departamentos.Add(dep);
+            }
+            return departamentos;
+        }
+
         public void CreateDepartamento(int iddept, String nombre, String localidad)
         {
             this.com.CommandType = CommandType.Text;
