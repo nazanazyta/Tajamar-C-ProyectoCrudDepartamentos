@@ -18,7 +18,7 @@ namespace ProyectoCrudDepartamentos.Data
 
         public DepartamentosContext()
         {
-            String cadena = "Data Source=localhost;Initial Catalog=HOSPITAL;Integrated Security=True";
+            String cadena = "Data Source=localhost;Initial Catalog=HOSPITAL;User ID=sa;Password=MCSD2020";
             this.ad = new SqlDataAdapter("select * from dept", cadena);
             this.tabla = new DataTable();
             this.ad.Fill(this.tabla);
